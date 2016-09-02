@@ -1,12 +1,12 @@
 # Notify on Exit (NOE)
-Have you ever wanted a notification when a particular command exits? Notify on Exit can help!
+Have you ever wanted an SMS notification when a particular command exits? Notify on Exit can help!
 
 Example:
 ```
 $ noe -r 'node import.js'
 ```
 In this example ```noe``` will run ```node import.js``` and notify the configured recipient of the exit code.
-###### Note: you must wrap the command to run in quotes if it has arguments.
+###### Note: if you are running a command with 1 or more arguments it must be wrapped in quotes.
 
 # Installation
 
