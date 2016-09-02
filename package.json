@@ -1,0 +1,22 @@
+{
+  "name": "noe",
+  "version": "1.0.0",
+  "description": "Run any command and get a text message of it's exit code when it's done.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "noe": "./index.js"
+  },
+  "keywords": [
+    "runner",
+    "notifier",
+    "twilio"
+  ],
+  "author": "Austin J Kurpuis",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
