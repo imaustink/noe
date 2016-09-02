@@ -21,18 +21,21 @@ const Twilio = require('twilio')(Config.twilio_sid, Config.twilio_token);
 Commander
     .version(package.version)
     .option('--init', 'Initiate new config file')
+    .option('-t, --test', 'Send test message')
     .option('-r, --run <command>', 'Command to exacute and watch')
     .option('-p, --phones <phones>', 'Phone number(s) to notify (comma separated)', list)
     .option('-l, --label [label]', 'Custom label for task')
     .parse(process.argv);
 
+// Default to notify_numbers if no option is passed
+var phones = Commander.phones || Config.notify_numbers;
+
 if(Commander.init) return init();
+if(Commander.test) return send(`This is a test message from NOE!`, phones);
 if(Commander.run){
     // Parse command and args
     var command = Commander.run.split(/\s+/g);
     var args = command.splice(1, command.length - 1);
-    // Default to notify_numbers if no option is passed
-    var phones = Commander.phones || Config.notify_numbers;
     // Default to command if no option is passed
     var name = Commander.label || command;
     // Run command with args
