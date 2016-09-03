@@ -19,7 +19,7 @@ In this example ```noe``` will run ```node import.js``` and notify the configure
 
 ## Install
 
-* ```$ npm install noe -g```
+* ```$ sudo npm install noe -g```
 * ```$ noe```
 
 The first time you run ```noe``` it will ask you to enter your Twilio SID, Twilio auth token, Twilio phone number and recipient phone number(s), which will be saved into .noe-config.json of your home directory.

@@ -1,19 +1,17 @@
 {
   "name": "noe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Run any command and get a text message of it's exit code when it's done.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "bin": {
     "noe": "./index.js"
   },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/imaustink/noe"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imaustink/noe"
   },
   "keywords": [
     "runner",
@@ -23,6 +21,7 @@
   "author": "Austin J Kurpuis",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "twilio": "^2.10.0"
   }
 }
