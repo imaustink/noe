@@ -1,4 +1,6 @@
 # Notify on Exit (NOE)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/imaustink/noe.svg)](https://greenkeeper.io/)
 Have you ever wanted an SMS notification when a particular command exits? Notify on Exit can help!
 
 Example:
